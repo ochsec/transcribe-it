@@ -11,6 +11,18 @@
                 <p class="w3-xlarge">Your one stop for audio transcription and voice analytics</p>
                 <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button>
             </header>
+        <%- include('partials/home/panel', {
+            title: 'Audio Transcription',
+            headline: 'Audio transcripts on demand',
+            message: 'Get text transcripts from audio files. Setup transcriptions in bulk with uploads or urls to audio files. Transcripts can be formatted in regular text or time series.',
+            icon: 'fa-file-audio-o'
+        }) %>
+        <%- include('partials/home/panel-alt', {
+            title: 'Speech Analytics',
+            headline: 'Gain insights into the conversation',
+            message: 'Recieve data on sentiment and speech characteristics like non-talk time, interruptions, and talk-speed. Review these data points in a variety of interactive charts that allow you to play through the audio and transcript.',
+            icon: 'fa fa-bar-chart'
+        }) %>
     </body>
 
 </html>
