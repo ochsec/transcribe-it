@@ -15,7 +15,7 @@ app.use((err, req, res, next) => {
 });
 
 app.get('/', (req, res) => {
-  res.render('login', {});
+  res.render('home', {});
 });
 
 // Exporting handler for serverless deployment
