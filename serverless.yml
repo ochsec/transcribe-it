@@ -1,0 +1,13 @@
+service: transcribe-it
+provider:
+  name: aws
+  runtime: nodejs16.x
+  region: us-east-1
+functions:
+  app:
+    handler: ./functions/web/home.handler
+    events:
+      - http:
+          path: /
+          method: any
+          cors: true
